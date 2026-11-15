@@ -24,6 +24,7 @@ Things checked on 29 Oct and found correct, so not reported:
 
 | File | Area | Severity | In short |
 |---|---|---|---|
+| [docs-perps-page-pins-sdk-0-32-1-but-latest-is-0-33-0.md](feedback/docs-perps-page-pins-sdk-0-32-1-but-latest-is-0-33-0.md) | docs | normal | Perps page says the app runs SDK 0.32.1; npm `latest` is 0.33.0 since 9 Nov, and the page has no pinned install command |
 | [sdk-perp-stop-operator-registry-missing-from-presets.md](feedback/sdk-perp-stop-operator-registry-missing-from-presets.md) | SDK | normal | First `placePerpStopOrder` on a Hideki pool throws `NotConfiguredError`: the Hideki preset still has no `operatorPermissionsRegistry` in 0.33.0 |
 | [botkit-perp-core-sdk-pin-excludes-0-32-1.md](feedback/botkit-perp-core-sdk-pin-excludes-0-32-1.md) | SDK | normal | Bot kit perp-core pins `^0.31.0`, which can never resolve to 0.32.1 or 0.33.0 |
 | [botkit-perp-hideki-uses-shannon-address-preset.md](feedback/botkit-perp-hideki-uses-shannon-address-preset.md) | SDK | normal | Bot kit passes Shannon's address preset on Hideki; on 0.32.1 and 0.33.0 that points perp discovery at Shannon's factory (shows up once the pin above is bumped) |
