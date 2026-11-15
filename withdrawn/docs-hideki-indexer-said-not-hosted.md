@@ -37,3 +37,6 @@ The docs-site release-notes page also still has older 0.32.0-rc entries saying "
 
 ## Environment
 SDK version 0.32.1 (@somnia-chain/markets-sdk), network Somnia Hideki/Tokyo testnet (chain 50383), wallet address: n/a (docs/code review)
+
+## Withdrawn: fixed (re-checked 15 Nov 2026)
+Not submitted. The exchange page now binds Hideki with `indexerUrl: "https://hideki-dev.smk.somnia.host/v1/graphql"` and the comment "Hideki's hosted indexer is development-grade", and its "Chains with no indexer" text no longer says Hideki has none. The `@somnia-chain/markets-sdk@0.33.0` tarball has no "no hosted indexer" text. Only the historical 0.32.0-rc entries on the release-notes page still say it, which describe those releases.

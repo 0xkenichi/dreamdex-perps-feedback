@@ -11,12 +11,13 @@ Area: docs
 The perp pool / MarginBank errors listed with selectors and meaning, as the SpotPool errors are, so a bot developer can decode a perp revert (for example a `placeOrderFor` that fails with status 0) from the docs.
 
 ## Actual
-The Errors page covers SpotPool and SpotStopOrderRegistry only. Its sections are: decoding-a-revert, spotpool-errors, order-validation, order-rejection, funding-and-vault, gas, order-lifecycle, batch-and-amend, operators-and-authorization, builder-codes, spotstoporderregistry-errors, preflight-http-api-reverts. The word "perp" does not appear on it. `MaxPositionSizeExceeded`, `IsolatedMarketBlocked`, `InsufficientCollateral` and the paper-USDso (voucher) errors are absent; only `ImmediateOrCancelNoFill` and `AmendReplacementRejected` appear, because SpotPool shares them.
+The Errors page covers SpotPool and SpotStopOrderRegistry only (unchanged on 15 Nov 2026). Its sections are: decoding-a-revert, spotpool-errors, order-validation, order-rejection, funding-and-vault, gas, order-lifecycle, batch-and-amend, operators-and-authorization, builder-codes, spotstoporderregistry-errors, preflight-http-api-reverts. The word "perp" does not appear on it. `MaxPositionSizeExceeded`, `IsolatedMarketBlocked`, `InsufficientCollateral` and the paper-USDso (voucher) errors are absent; only `ImmediateOrCancelNoFill` and `AmendReplacementRejected` appear, because SpotPool shares them.
 
 ## Evidence
 - Perps page text: "The full list of order errors is on the Errors page." Its pitfalls list names `MaxPositionSizeExceeded() (0x714b36d6)`, `IsolatedMarketBlocked` and `InsufficientCollateral() (0x3a23d825)`.
-- Errors page, checked 29 Oct 2026: 0 matches for "perp", "Perp", "MarginBank", "voucher", "MaxPositionSizeExceeded", "IsolatedMarketBlocked", "InsufficientCollateral", "0x714b36d6", "0x3a23d825".
+- Errors page, checked 29 Oct 2026 and again 15 Nov 2026: 0 matches for "perp", "Perp", "MarginBank", "voucher", "MaxPositionSizeExceeded", "IsolatedMarketBlocked", "InsufficientCollateral", "0x714b36d6", "0x3a23d825".
+- The perps page still has the link (`href="/docs/developers/contracts/errors#order-rejection"`) and the sentence "The full list of order errors is on the Errors page." (15 Nov 2026).
 - The selectors on the perps page are correct (`keccak256` checked with viem `toFunctionSelector`), so the gap is only on the Errors page.
 
 ## Environment
-Docs at app.testnet.dreamdex.io (29 Oct 2026), SDK 0.32.1, Somnia Hideki/Tokyo testnet (chain 50383), wallet address: n/a (docs check)
+Docs at app.testnet.dreamdex.io (first checked 29 Oct 2026, re-checked 15 Nov 2026), SDK 0.33.0 (the dreamDEX perps page names 0.32.1 as the app's version), Somnia Hideki/Tokyo testnet (chain 50383), wallet address: n/a (docs check)

@@ -39,3 +39,6 @@ The nearest 0.32.1 calls do something different:
 
 ## Environment
 SDK version 0.32.1 (@somnia-chain/markets-sdk), network Somnia Hideki/Tokyo testnet (chain 50383), wallet address: n/a (docs/code review)
+
+## Withdrawn: fixed (re-checked 15 Nov 2026)
+Not submitted. `@somnia-chain/markets-sdk@0.33.0` adds `SomniaMarketsClient.quotePerpClose`, `SomniaMarkets.quotePerpClose` and `SomniaMarketsClient.getPerpPositionsPage` (`dist/somniaMarketsClient.d.ts` L3755 and L2904, `dist/unified/exchange.d.ts` L2490). The documented snippets compile with `tsc --strict` against 0.33.0, and the release notes list both methods under 0.33.0. Note: the dreamDEX perps developer page still says the app runs 0.32.1, where they are missing.

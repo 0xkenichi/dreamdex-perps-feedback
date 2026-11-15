@@ -45,3 +45,6 @@ This is the documented procedure for competition scoring. On the SDK version the
 
 ## Environment
 SDK version 0.32.1 (@somnia-chain/markets-sdk), network Somnia Hideki/Tokyo testnet (chain 50383), wallet address: n/a (docs/code review)
+
+## Withdrawn: fixed (re-checked 15 Nov 2026)
+Not submitted. In `@somnia-chain/markets-sdk@0.33.0`, `MarginEventKind` includes `"CreditReclaimed"` (and `"DepositFor"`), `getMarginEvents`, `listPerpMarginPulls` and `listPerpMainFundingEvents` take inclusive `sinceBlock` / `toBlock` and apply them in the query, and `MarginEvent` rows carry `blockNumber` and `logIndex`. The current docs sample, copied from the Perps page, compiles with `tsc --strict` against 0.33.0.

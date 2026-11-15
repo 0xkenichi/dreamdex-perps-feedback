@@ -20,3 +20,6 @@ An explorer entry like the other Somnia chains in the same file, pointing at the
 
 ## Environment
 SDK 0.32.1 (@somnia-chain/markets-sdk), Somnia Hideki/Tokyo testnet (chain 50383), wallet address: n/a (read-only check)
+
+## Withdrawn: fixed (re-checked 15 Nov 2026)
+Not submitted. With `@somnia-chain/markets-sdk@0.33.0`, `hidekiTestnet.blockExplorers` is `{"default":{"name":"Somnia Explorer","url":"https://explorer.testnet.somnia.network/tokyo"}}` at runtime.
